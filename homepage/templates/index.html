@@ -43,7 +43,9 @@
   
         <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
           <img alt="image" src="{% static '/img/avatar/avatar-1.png' %}" class="rounded-circle mr-1">
-          <div class="d-sm-none d-lg-inline-block">Hi, {{ request.user.username }}</div></a>
+          <div class="d-sm-none d-lg-inline-block">Hi, {{ request.user.username }}</div>
+        </a>
+
           <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-title">Logged in 5 min ago</div>
             <a href="features-profile.html" class="dropdown-item has-icon">
@@ -55,6 +57,9 @@
             <a href="features-settings.html" class="dropdown-item has-icon">
               <i class="fas fa-cog"></i> Settings
             </a>
+            <a href=" " class="btn btn-primary btn-lg btn-block btn-icon-split">
+                <i class="fas fa-rocket"></i> LOGOUT
+              </a>
             <div class="dropdown-divider"></div>
 
           </div>
@@ -139,19 +144,48 @@
     
           <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
             <a href=" " class="btn btn-primary btn-lg btn-block btn-icon-split">
-              <i class="fas fa-rocket"></i> LOGOUT
+              <i class="fas fa-rocket"></i> LOGIN
             </a>
-          </div>        </aside>
+          </div> 
+               </aside>
     </div>
 
    
       
       <div class="row space">
         <div class="col-12 col-md-12 col-lg-12">
-        <h1> weather </h1>
+            <div class="card">
+                <div class="card-header">
+                <h1> weather analysis</h1>
+                </div>    
 
-                
-   
+                <div class="card-header">
+                <h4> card body 1</h4>
+                </div> 
+
+
+                <div class="card-header">
+                    <h4> card body 2</h4>
+                </div>   
+
+                <div class="card-header">
+                    <h4> card body 3</h4>
+                </div>   
+
+                <div class="card-header">
+                    <h4> card body 4</h4>
+                    </div> 
+    
+    
+                    <div class="card-header">
+                        <h4> card body 5</h4>
+                    </div>   
+    
+                    <div class="card-header">
+                        <h4> card body 6</h4>
+                    </div>   
+
+            </div>   
         </div>
       </div>
 
