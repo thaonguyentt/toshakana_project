@@ -21,8 +21,6 @@ def homepage(request):
     # df = spark.read.format("jdbc").option("url", "jdbc:mysql://localhost/weather_his").option("dbtable", "weather").option("user", "root").option("password", "12345678").load() 
     
     
-    
-    
     url = "jdbc:mysql://localhost:3306/weather_his"
     table = "weather"
     properties = {"user": "root", "password": "12345678"}
