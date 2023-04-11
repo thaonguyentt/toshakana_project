@@ -1,3 +1,6 @@
+- Lỡ đặt tên toshakana rồi bây h đổi thì sợ lỗi nên để luôn
+- sử dụng câu lệnh để chạy web: python3 manage.py runserver 0.0.0.0:8000
+
 1. Cài django để tạo môi trường ảo chạy web:
 - sử dụng python 3
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
@@ -22,6 +25,9 @@ https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-wit
 
 4. tạo bảng 
 - Script_db_toshakana.sql : chứa script để tạo bảng và import bảng trong cơ sở dữ liệu weather_his
+
+5. sử dụng django-pandas:
+
 
 n. Không biết để làm gì
 - chưa thấy tác dụng của nó trong bài này: dăng nhập vào đây http://127.0.0.1:8000/admin
