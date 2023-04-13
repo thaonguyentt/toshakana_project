@@ -25,6 +25,22 @@
 
   gtag('config', 'UA-94034622-3');
 </script>
+
+<title>Auto Reload Page with Ajax</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      setInterval(function() {
+        $.ajax({
+          url: "path/to/your/api",
+          type: "GET",
+          success: function(response) {
+            $('#content').html(response);
+          }
+        });
+      }, 3600000); // reload every 5 seconds
+    });
+  </script>
 <!-- /END GA --></head>
 
 <!-- khu vực navbar -->
