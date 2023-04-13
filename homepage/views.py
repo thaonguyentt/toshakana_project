@@ -1,23 +1,14 @@
 from django.shortcuts import render
 import matplotlib
 matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+# from io import BytesIO
+# import base64
 from pyspark.sql import SparkSession
-
-
-# from homepage.utils.analysis import *
-
-# from background_task.models import Task
-# task_obj = Task.objects.create(
-#     task_name='homepage', 
-#     task_func='homepage',
-#     schedule_type=Task.SCHEDULE_INTERVAL,
-#     schedule='60', # Run every 60 seconds
-#     repeat=None
-# )
+from homepage.utils.analysis import *
 
 
 
-# @background(schedule=60)
 def homepage(request):
 
     spark = SparkSession.builder\
@@ -34,6 +25,8 @@ def homepage(request):
     table3 = "resampled_df"
     table4 = "resampled_days"
     properties = {"user": "root", "password": "12345678"}
+
+
 
     
     # df1 = spark.read.jdbc(url=url, table= table1, properties=properties)

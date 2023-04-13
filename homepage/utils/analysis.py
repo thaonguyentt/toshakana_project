@@ -1,5 +1,5 @@
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, regexp_replace
+# from pyspark.sql import SparkSession
+# from pyspark.sql.functions import col, regexp_replace
 import matplotlib
 matplotlib.use('Agg')
 import holoviews as hv
@@ -126,6 +126,5 @@ def chart16(resampled_df):
             ])
         )
     )
-
     fig.write_image('/Users/phanngl/Documents/bigdata/project/toshakana/homepage/static/img/chart/chart13.png', format='png')
 
